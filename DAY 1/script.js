@@ -10,5 +10,5 @@ let div = React.createElement(
 )
 
 let section = document.querySelector("section")
-let rootNode = React.createRoot(section)
+let rootNode = ReactDOM.createRoot(section)
 rootNode.render(div)
