@@ -1,28 +1,14 @@
-// let person = {
-//     name: 'Raghav',
-//     age: 89,
-//     company: 'Google',
+let div = React.createElement(
+    'div',
+    null,
+    React.createElement(
+        'h1',
+        null,
+        React.createElement('span', null, "I am from REACT")
+    )
 
-// }
+)
 
-// let fn = ({name, age})=>{
-//     console.log(name, age);
-    
-// }
-// fn(person)
-
-
-let a = 890;
-
-let print = ()=>{
-    console.log(a);
-    
-};
-
-let ab = ()=>{
-    let a = 80
-
-    print();
-}
-
-ab();
+let section = document.querySelector("section")
+let rootNode = React.createRoot(section)
+rootNode.render(div)
