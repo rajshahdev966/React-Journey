@@ -10,7 +10,7 @@ createRoot(document.getElementById('root')).render(
       <App></App>
       <About name = "Raj" age = {90}>
         <h3>I am in Main but a children of About</h3>
-    </About>
+      </About>
     </div>
 
 
