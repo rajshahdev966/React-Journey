@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Count is - {count}</h1>
+      <h1 className='text-5xl'>Count is - {count}</h1>
       <button onClick={()=>{
         setCount(count + 1)
       }}>Increment</button>
