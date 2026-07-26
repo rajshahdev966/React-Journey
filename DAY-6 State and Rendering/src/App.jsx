@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 
 const App = () => {
+  let [count, setCount] = useState(0);
+
+
   return (
     <div>
-      <h1 className='bg-red-700 text-amber-50'>Hello World I learned TailWind CSS</h1>
+      <h1>Count is {count}</h1>
+      <button onClick={()=>{
+        setCount(count + 1)
+      }}>Click to increase</button>
     </div>
   )
 }
